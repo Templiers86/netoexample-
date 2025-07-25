@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
+import static my.netology.service.CustomsService.calculateCustoms;
+
 public class HomeWork {
-    public static void main(String[] args)
+    public static void main(String[] args) {
 
     {
         Scanner scanner = new Scanner(System.in);
@@ -19,8 +21,8 @@ public class HomeWork {
 
     }
 
-    public static int calculateCustoms(int price, int weight) {
-        return price/100 + weight * 100;
     }
+
+
 
 }
