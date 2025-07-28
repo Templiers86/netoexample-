@@ -1,16 +1,14 @@
 package my.netology.service;
 
+import java.util.Scanner;
+
 public class CustomsService {
-    public static final int Buty_rate = 100; // ставка пошлины за кг. (статическое поле, пихаем ниже с заменой)
+    public static final int BUTY_RATE = 100; // Исправил. Невнимательно подошёл к вопросу.
 
-    public static int calculateCustoms(int price, int weight){
+    public static int calculateCustoms(int price, int weight) {
 
-        int result = price/100 + weight * Buty_rate; // цена % ставку за коп. за рубль + вес * ставку пошлины в статике
+        int result = price / 100 + weight * BUTY_RATE;
 
-        return result; // "результивтивный результ" с возвратом в main
+        return result;
     }
-
-    // При решении этой задачки вспотел без спортзала. Тут вроде ничего сложного, но как это всё было не просто.
-    // Прям заставило шестерни со скрипов проворачиваться. Спасибо )
 }
-
